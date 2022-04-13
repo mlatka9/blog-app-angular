@@ -1,0 +1,22 @@
+<div class="container">
+  <form action="post" autocomplete="off" method="POST">
+    <div class="input-group">
+      <input [(ngModel)]="formFields.title" type="text" class="form-control"
+             name="title" placeholder="Title" title="title">
+    </div>
+
+    <div class="input-group">
+      <input [(ngModel)]="formFields.image" type="text" class="form-control"
+             name="image" placeholder="Image" title="image">
+    </div>
+
+    <div class="input-group">
+      <input [(ngModel)]="formFields.text" type="text" class="form-control"
+             name="text" placeholder="Text" title="text">
+    </div>
+
+    <button (click)="addPost()" class="btn btn-primary" type="submit" title="Add new post">
+      Add new post
+    </button>
+  </form>
+</div>
